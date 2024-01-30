@@ -16,9 +16,12 @@ const userSchema= new mongoose.Schema(
         },
         password:{
             type:String,
-            required:true,
-            
-            
+            required:true, 
+        },
+        avatar:{
+            type:String,
+            default : "https://cdn3.vectorstock.com/i/1000x1000/53/42/user-member-avatar-face-profile-icon-vector-22965342.jpg"
+
         },
     },
     {timestamps:true});
