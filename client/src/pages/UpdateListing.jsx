@@ -109,7 +109,7 @@ export default function CreateLisitng() {
         })
     }
     const handleChange = (e) => {
-        if (e.target.id === 'sale' || e.target.id === 'rent') {
+        if (e.target.id === 'sell' || e.target.id === 'rent') {
           setFormdata({
             ...formData,
             type: e.target.id,
@@ -181,7 +181,7 @@ export default function CreateLisitng() {
                      placeholder='Name'
                       className='border p-3 rounded-lg' 
                       id="name" 
-                      maxLength='10'
+                      maxLength='20'
                      required onChange={handleChange}
                       value={formData.name} />
                     <textarea type='text'
@@ -196,7 +196,7 @@ export default function CreateLisitng() {
                     placeholder='Address' 
                     className='border p-3 rounded-lg' 
                     id="address" 
-                    maxLength='10' 
+                    maxLength='40' 
                     required
                     onChange={handleChange}
                     value={formData.address}
