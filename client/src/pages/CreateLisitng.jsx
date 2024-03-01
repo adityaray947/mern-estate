@@ -95,7 +95,7 @@ export default function CreateLisitng() {
         })
     }
     const handleChange = (e) => {
-        if (e.target.id === 'sale' || e.target.id === 'rent') {
+        if (e.target.id === 'sell' || e.target.id === 'rent') {
           setFormdata({
             ...formData,
             type: e.target.id,
@@ -182,7 +182,7 @@ export default function CreateLisitng() {
                     placeholder='Address' 
                     className='border p-3 rounded-lg' 
                     id="address" 
-                    maxLength='10' 
+                    maxLength='100' 
                     required
                     onChange={handleChange}
                     value={formData.address}
